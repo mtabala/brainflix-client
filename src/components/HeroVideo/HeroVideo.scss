@@ -1,0 +1,17 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/global" as *;
+
+.hero {
+    
+    &__video {
+        height:45vh;
+        width: 100%;
+        background-image: url(../../../../swan.jpg);
+        background-size: cover;
+        background-position: center;
+        @include tablet {
+            height:70vh;
+        }
+    }
+}
