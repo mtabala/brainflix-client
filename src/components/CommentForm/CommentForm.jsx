@@ -1,10 +1,11 @@
 import "./CommentForm.scss"
 import mohanImg from "../../assets/Images/Mohan-muruge.jpg"
+import Comment from '../Comment/Comment';
 
 function CommentForm () {
     return (
         <section className="conversation">
-            <div class="conversation__wrapper">
+            <div class="conversation__wrap">
                 <div class="conversation__image">
                     <img class="conversation__img" src={mohanImg} alt="user avatar" />
                 </div>
@@ -14,6 +15,7 @@ function CommentForm () {
                     <button class="conversation__btn" type="submit" id="submit-comment-btn">Comment</button>
                 </form>
             </div>
+            <Comment />
         </section>
     )
 }
