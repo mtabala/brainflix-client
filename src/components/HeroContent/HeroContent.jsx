@@ -8,7 +8,7 @@ function HeroContent () {
             <div className="content__wrapper">
                 <p className="content__wrapper-title">By Red Cow</p>
                 <p className="content__wrapper-views">1,001,023</p>
-                <p className="content__wrapper-text">Posted 1 years ago</p>
+                <p className="content__wrapper-date">07/11/2021</p>
                 <button className="content__like-btn">111,044</button>
             </div>
             <p className="content__text">On a gusty day in Southern Utah, a group of 25

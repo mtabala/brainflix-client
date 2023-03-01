@@ -10,7 +10,7 @@ function Header () {
                 <img className="header__logo-img" src={logo} alt="logo" />
             </a>
 
-            <div className="header__wrap">
+            <form className="header__wrap">
                 <textarea
                     className="header__input"
                     placeholder="Search"
@@ -22,9 +22,9 @@ function Header () {
                     alt="user image"
                 />
 
-                {/* <button className="header__btn"> upload </button> */}
-            </div>
-            <button className="header__btn"> upload </button>
+                <button className="header__btn"> upload </button>
+            </form>
+            {/* <button className="header__btn"> upload </button> */}
         </header>
         </>
     )

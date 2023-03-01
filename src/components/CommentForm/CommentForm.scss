@@ -1,0 +1,72 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/global" as *;
+
+.conversation {
+    padding:1rem;
+
+    &__wrapper {
+    display:flex;
+    gap:1rem;
+    border-bottom:2px solid $border;
+    }
+
+    &__image {
+        padding-top:1.1rem;
+    }
+    
+    &__img {
+        width:35px;
+        height:35px;
+        object-fit:cover;
+        object-position:30% 60%;
+        border-radius:50%;
+    
+        &:hover {
+            transform: scale(1.5);
+          }
+    }
+    
+    &__form {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        max-width:80%;
+        margin-bottom:1rem;
+    }
+
+    &__label {
+        text-transform: uppercase;
+        color: $font-secondary;
+        font-size:12px;
+        line-height:20px;
+        font-weight: 700;
+    }
+    
+    &__input {
+        height:7rem;
+        padding:0.8rem;
+        resize:none;
+        border:0.06rem solid $border;
+        border-radius: 0.25rem;
+        margin-bottom:1rem;
+        &::placeholder {
+            color:black;
+        }
+    }
+    
+    &__btn {
+        display:flex;
+        justify-content:center;
+        color:$font-primary;
+        font-weight:600;
+        text-transform: uppercase;
+        padding:0.8rem 2rem 0.6rem;
+        border-radius: 5px;
+        border:none;
+        cursor:pointer;
+        &:hover {
+            background-color: yellow;
+        }
+    }
+}
