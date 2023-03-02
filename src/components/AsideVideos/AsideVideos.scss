@@ -1,0 +1,15 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.videos {
+    padding:0rem 1rem;
+
+    &__header {
+        color: $font-secondary;
+        text-transform: uppercase;
+        font-size:12px;
+        line-height:20px;
+        font-weight: 700;
+        margin-bottom:0.8rem;
+    }
+}

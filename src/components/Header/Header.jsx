@@ -22,7 +22,7 @@ function Header () {
                     alt="user image"
                 />
 
-                <button className="header__btn"> upload </button>
+                <button className="header__btn btn"> upload </button>
             </form>
             {/* <button className="header__btn"> upload </button> */}
         </header>
