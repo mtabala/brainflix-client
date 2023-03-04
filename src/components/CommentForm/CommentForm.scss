@@ -2,7 +2,6 @@
 @use "../../styles/partials/mixins" as *;
 
 .conversation {
-    padding:1rem;
 
     &__wrap {
     display:flex;
@@ -11,12 +10,15 @@
     }
 
     &__image {
-        padding-top:1.1rem;
+        padding-top:1.45rem;
+        @include tablet {
+            padding-top:1.52rem;
+        }
     }
     
     &__img {
-        width:35px;
-        height:35px;
+        width:36px;
+        height:36px;
         object-fit:cover;
         object-position:30% 60%;
         border-radius:50%;
@@ -28,30 +30,43 @@
     }
     
     &__form {
-        display:flex;
-        flex-direction: column;
-        width:100%;
-        max-width:90%;
         margin-bottom:1rem;
+        flex-grow:1;
+        @include tablet {
+            display:flex;
+            width:100%;
+            gap:1.5rem;
+        }
     }
 
     &__label {
         text-transform: uppercase;
         color: $font-secondary;
-        font-size:12px;
-        line-height:20px;
+        font-size:0.8rem;
+        line-height:1.25rem;
         font-weight: 700;
+    }
+    &__input-wrap {
+        @include tablet {
+            width:80%;
+        }
     }
     
     &__input {
+        width:100%;
         height:7rem;
-        padding:0.8rem;
+        padding:0.65rem;
         resize:none;
         border:0.06rem solid $border;
         border-radius: 0.25rem;
-        margin-bottom:1rem;
+        margin: 0.25rem 0rem 0.5rem;
         &::placeholder {
             color:black;
+            font-size:0.9rem;
+        }
+        @include tablet {
+            height: 2.5rem;
+            margin: 4px 0 0;
         }
     }
     

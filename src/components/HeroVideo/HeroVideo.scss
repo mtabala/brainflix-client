@@ -4,7 +4,8 @@
 .hero {
     
     &__video {
-        height:45vh;
+        height:40vh;
+        object-fit: cover;
         width: 100%;
         background-color: black;
         @include tablet {

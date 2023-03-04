@@ -3,6 +3,9 @@
 
 .videos {
     padding:0rem 1rem;
+    @include tablet {
+        padding: 0rem 2rem;
+    }
 
     &__header {
         color: $font-secondary;

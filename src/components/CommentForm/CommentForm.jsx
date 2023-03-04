@@ -9,11 +9,11 @@ function CommentForm () {
             </div>
             <form className="conversation__form">
 
-                <div>    
+                <div className="conversation__input-wrap">    
                     <label htmlFor="comment" className="conversation__label">join the conversation</label>
+                    <textarea className="conversation__input" id="comment" name="comment" placeholder="Add a new comment"></textarea>
                 </div>
 
-                <textarea className="conversation__input" id="comment" name="comment" placeholder="Add a new comment"></textarea>
                 <button className="conversation__btn btn" type="submit" id="submit-comment-btn">Comment</button>
             
             </form>

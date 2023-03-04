@@ -4,13 +4,19 @@
 .content {
     padding:1rem;
     font-size:0.81rem;
-    
+    @include tablet {
+        padding: 1rem 2rem;
+    }
     &__header {
         padding-bottom:1rem;
         border-bottom:1px solid $border;
         font-size:1.5rem;
         line-height:2rem;
         font-weight:700;
+        @include tablet {
+            font-size:2.06rem;
+            border:none;
+        }
     }
     &__wrapper {
         padding:1rem 0rem;
@@ -18,21 +24,37 @@
         display:flex;
         flex-wrap: wrap;
         color:$font-secondary;
+        @include tablet {
+            flex-wrap: nowrap;
+            padding:1rem 0 0;
+        }
     }
     &__wrapper-title {
         font-weight: 600;
         width:50%;
         color:$background-hero;
         margin-bottom:1rem;
+        @include tablet {
+            width:16%;
+        }
     }
     &__wrapper-date {
         width:50%;
+        @include tablet {
+            order:2;
+            width:60%;
+        }
     }
     &__wrapper-views {
         background-image: url(../../assets/Icons/views.svg);
         background-size: 1.3rem;
         background-repeat: no-repeat;
         padding-left:2rem;
+        @include tablet {
+            order:3;
+            width:17%;
+            padding-left: 1.5rem;
+        }
     }
     &__like-btn {
         background-image: url(../../assets/Icons/likes.svg);
@@ -42,8 +64,15 @@
         padding-left:2rem;
         background-repeat: no-repeat;
         border:none;
+        @include tablet {
+            order:4;
+            padding-left: 1.5rem;
+        }
     }
     &__text {
         margin-top:1rem;
+        @include tablet {
+            padding: 0 4.6rem 0 0;
+        }
     }
 }

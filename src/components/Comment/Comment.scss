@@ -2,15 +2,15 @@
 @use "../../styles/partials/mixins" as *;
 
 .conversation {
-    &__list {
-        @include tablet {
-            padding:0 3rem;
-        }
-        @include desktop {
-            margin:0rem 18.7rem;
-            padding:0;
-        }
-    }
+    // &__list {
+    //     @include tablet {
+    //         padding:0 3rem;
+    //     }
+    //     @include desktop {
+    //         margin:0rem 18.7rem;
+    //         padding:0;
+    //     }
+    // }
     &__item {
         display: flex;
         gap: 1rem;
