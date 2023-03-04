@@ -6,9 +6,7 @@
     &__video {
         height:45vh;
         width: 100%;
-        background-image: url("https://i.imgur.com/l2Xfgpl.jpg");
-        background-size: cover;
-        background-position: center;
+        background-color: black;
         @include tablet {
             height:70vh;
         }

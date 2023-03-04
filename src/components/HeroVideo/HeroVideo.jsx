@@ -1,13 +1,15 @@
 import "./HeroVideo.scss"
 
-function HeroVideo () {
+function HeroVideo ({img, video}) {
+    console.log(video);
     return (
         <>
         <section className="hero">
             <video controls 
                 className="hero__video" 
-                poster="https://i.imgur.com/l2Xfgpl.jpg" 
-                src="https://project-2-api.herokuapp.com/stream"></video>
+                poster={img} 
+                src={video + "?api_key='mtabala'"} >
+            </video>
         </section>
         </>
     )

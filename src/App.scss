@@ -22,7 +22,12 @@
     text-transform: uppercase;
     cursor:pointer;
     width:100%;
-    height:35px;
+    height:36px;
+    font-weight:600;
+    @include tablet {
+        width:30%;
+        padding: 0.7rem 0 0.7rem 0.55rem;
+    }
 }
 .header__btn {
     background-image: url(./assets/Icons/upload.svg);

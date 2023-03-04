@@ -8,9 +8,14 @@ function CommentForm () {
                 <img className="conversation__img" src={mohanImg} alt="user avatar" />
             </div>
             <form className="conversation__form">
-                <label htmlFor="comment" className="conversation__label">join the conversation</label>
+
+                <div>    
+                    <label htmlFor="comment" className="conversation__label">join the conversation</label>
+                </div>
+
                 <textarea className="conversation__input" id="comment" name="comment" placeholder="Add a new comment"></textarea>
                 <button className="conversation__btn btn" type="submit" id="submit-comment-btn">Comment</button>
+            
             </form>
         </div>            
     )

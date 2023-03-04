@@ -4,18 +4,18 @@ import mohanImg from "../../assets/Images/Mohan-muruge.jpg"
 
 function Header () {
     return (
-        <>
         <header className="header">
             <a className="header__logo">
                 <img className="header__logo-img" src={logo} alt="logo" />
             </a>
 
-            <form className="header__wrap">
-                <textarea
+            <form className="header__form">
+                <input
+                    type="text"
                     className="header__input"
                     placeholder="Search"
                     name="input"
-                ></textarea>
+                ></input>
                 
                 <img className="header__img"
                     src={mohanImg}
@@ -24,9 +24,7 @@ function Header () {
 
                 <button className="header__btn btn"> upload </button>
             </form>
-            {/* <button className="header__btn"> upload </button> */}
         </header>
-        </>
     )
 }
 export default Header;

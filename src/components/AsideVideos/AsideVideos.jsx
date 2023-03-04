@@ -1,14 +1,22 @@
 import './AsideVideos.scss';
+import { useState } from "react";
 import AsideVideoCard from '../AsideVideoCard/AsideVideoCard';
+import VideoData from "../../assets/Data/videos.json";
 
-function AsideVideos () {
+function AsideVideos ({UpdateSelectedVideo, selectedVideoId}) {
+    const [videos] = useState (VideoData);
 
     return (
-        <aside class="videos">
+        <aside className="videos">
             <h4 className="videos__header">next video</h4>
-            <ul class="videos__list">
-                <AsideVideoCard />
+            <ul>
+                {videos
+                    .filter((video) => ( video.id !== selectedVideoId))
+                    .map((video) => (<AsideVideoCard UpdateSelectedVideo={UpdateSelectedVideo} key={video.id} video={video} />) )
+                }
+
             </ul>
+            
         </aside>
     );
 }
