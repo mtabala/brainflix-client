@@ -4,6 +4,8 @@
 .content {
     padding:1rem;
     font-size:0.81rem;
+    color: $font-primary;
+
     @include tablet {
         padding: 1rem 2rem;
     }
@@ -33,7 +35,7 @@
         font-weight: 600;
         width:50%;
         color:$background-hero;
-        margin-bottom:1rem;
+        margin-bottom:0.5rem;
         @include tablet {
             width:16%;
         }
@@ -59,11 +61,12 @@
     &__like-btn {
         background-image: url(../../assets/Icons/likes.svg);
         background-size: 1.2rem;
-        background-color: white;
+        background-color: $background-primary;
         color:$font-secondary;
         padding-left:2rem;
         background-repeat: no-repeat;
         border:none;
+        cursor:pointer;
         @include tablet {
             order:4;
             padding-left: 1.5rem;

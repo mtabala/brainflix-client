@@ -5,8 +5,8 @@ import mohanImg from "../../assets/Images/Mohan-muruge.jpg"
 function Header () {
     return (
         <header className="header">
-            <a className="header__logo">
-                <img className="header__logo-img" src={logo} alt="logo" />
+            <a className="header__logo" href="../../public/index.html">
+                <img className="header__logo-img" src={logo} alt="logo mohan" />
             </a>
 
             <form className="header__form">
@@ -19,10 +19,10 @@ function Header () {
                 
                 <img className="header__img"
                     src={mohanImg}
-                    alt="user image"
+                    alt="user avatar"
                 />
 
-                <button className="header__btn btn"> upload </button>
+                <a className="btn btn--header" href="../../public/index.html"> upload </a>
             </form>
         </header>
     )

@@ -5,24 +5,29 @@
     &__item {
         display:flex;
         gap:1rem;
-        width:19rem;
+        width:20rem;
         margin-bottom:1rem;
+        cursor:pointer;
+        @include tablet {
+            width:40%;
+        }
     }
     &__item-img {
-        height:4.1rem;
+        height:4.2rem;
         width:7rem;
         object-fit:cover;
         background-color: $border;
         border-radius: 4px;
     }
     &__item-wrap {
-        max-width:175px;
+        width:10.5rem;
+        align-self: center;
     }
     &__item-title {
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 700;
         line-height: 18px;
-        margin-bottom:1rem;
+        margin-bottom:0.5rem;
     }
     &__item-channel {
         font-size: 13px;

@@ -14,7 +14,7 @@ function CommentForm () {
                     <textarea className="conversation__input" id="comment" name="comment" placeholder="Add a new comment"></textarea>
                 </div>
 
-                <button className="conversation__btn btn" type="submit" id="submit-comment-btn">Comment</button>
+                <a className="btn btn--conversation" href="../../public/index.html">Comment</a>
             
             </form>
         </div>            

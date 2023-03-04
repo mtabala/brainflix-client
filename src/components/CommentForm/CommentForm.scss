@@ -10,17 +10,17 @@
     }
 
     &__image {
-        padding-top:1.45rem;
+        padding-top:1.5rem;
         @include tablet {
             padding-top:1.52rem;
         }
     }
     
     &__img {
-        width:36px;
-        height:36px;
+        width:2.5rem;
+        height:2.5rem;
         object-fit:cover;
-        object-position:30% 60%;
+        object-position:30%;
         border-radius:50%;
         background-color: $font-secondary;
     

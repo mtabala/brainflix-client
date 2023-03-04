@@ -26,19 +26,30 @@
     font-size:0.75rem;
     line-height:1.25rem;
     font-weight:700;
-
+    text-align:center;
 
     @include tablet {
         width:30%;
-        padding: 0.6rem 0 0.6rem 0.55rem;
         align-self: flex-end;
         margin-bottom: 0.4rem;
 
     }
-}
-.header__btn {
-    background-image: url(./assets/Icons/upload.svg);
-}
-.conversation__btn {
-    background-image: url(./assets/Icons/add_comment.svg);
+
+    &:hover {
+        background-color:$button-hover;
+    }        
+
+    &--header {
+        padding: 0.7rem 0 0.7rem 0.5rem;
+        background-image: url(./assets/Icons/upload.svg);
+    }
+    &--conversation {
+        display:inline-block;
+        padding:0.7rem 0rem;
+        height:2.5rem;
+        font-size:0.75rem;
+        line-height:1.25rem;
+        font-weight:700;
+        background-image: url(./assets/Icons/add_comment.svg);
+    }
 }

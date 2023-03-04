@@ -8,7 +8,7 @@ function AsideVideos ({UpdateSelectedVideo, selectedVideoId}) {
 
     return (
         <aside className="videos">
-            <h4 className="videos__header">next video</h4>
+            <h4 className="videos__header">next videos</h4>
             <ul>
                 {videos
                     .filter((video) => ( video.id !== selectedVideoId))
