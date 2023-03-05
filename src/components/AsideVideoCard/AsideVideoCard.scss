@@ -8,12 +8,13 @@
         width:20rem;
         margin-bottom:1rem;
         cursor:pointer;
-        @include tablet {
-            width:40%;
+        @include desktop {
+            width:20rem;
+            margin-bottom:1.4rem;
         }
     }
     &__item-img {
-        height:4.2rem;
+        height:4.1rem;
         width:7rem;
         object-fit:cover;
         background-color: $border;
@@ -24,9 +25,9 @@
         align-self: center;
     }
     &__item-title {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 700;
-        line-height: 18px;
+        line-height: 1.125rem;
         margin-bottom:0.5rem;
     }
     &__item-channel {

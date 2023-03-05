@@ -28,16 +28,12 @@
     font-weight:700;
     text-align:center;
 
-    @include tablet {
-        width:30%;
-        align-self: flex-end;
-        margin-bottom: 0.4rem;
-
-    }
-
     &:hover {
         background-color:$button-hover;
-    }        
+    }      
+    @include tablet {
+        width:30%;
+    }  
 
     &--header {
         padding: 0.7rem 0 0.7rem 0.5rem;
@@ -51,5 +47,21 @@
         line-height:1.25rem;
         font-weight:700;
         background-image: url(./assets/Icons/add_comment.svg);
+        @include tablet {
+            align-self: flex-end;
+            margin-bottom: 0.4rem;
+            padding: 0.7rem 0rem 0.7rem 0.6rem;
+        }
+    }
+}
+
+.main {
+    @include desktop {
+        display:flex;
+        padding:0 7rem 0rem 10rem;
+        
+        &__container {
+            border-right: 1px solid #e1e1e1;
+        }
     }
 }

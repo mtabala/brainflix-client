@@ -3,16 +3,30 @@
 
 .videos {
     padding:0rem 1rem;
+
     @include tablet {
         padding: 0rem 2rem;
+    }
+
+    @include desktop {
+        padding:1.5rem 1rem;
     }
 
     &__header {
         color: $font-secondary;
         text-transform: uppercase;
-        font-size:12px;
-        line-height:20px;
-        font-weight: 700;
+        font-size:0.81rem;
+        line-height:1.12rem;
+        font-weight:700;
         margin-bottom:1rem;
+        @include tablet {
+            font-size:0.87rem;
+            line-height:1.37rem;
+            font-weight:700;
+            margin:0.5rem 0 1.5rem;
+        }
+        @include desktop {
+            margin-bottom:1rem;
+        }
     }
 }

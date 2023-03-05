@@ -7,6 +7,10 @@
     display:flex;
     gap:1rem;
     border-bottom:2px solid $border;
+    @include desktop {
+        margin-left:0.5rem;
+        gap:2rem;
+    }
     }
 
     &__image {
@@ -26,30 +30,33 @@
     
         &:hover {
             transform: scale(1.5);
-          }
+        }
     }
     
     &__form {
-        margin-bottom:1rem;
+        padding-bottom:1rem;
         flex-grow:1;
         @include tablet {
             display:flex;
             width:100%;
             gap:1.5rem;
         }
-    }
-
-    &__label {
-        text-transform: uppercase;
-        color: $font-secondary;
-        font-size:0.8rem;
-        line-height:1.25rem;
-        font-weight: 700;
+        @include desktop {
+            padding:0 1rem 1rem 0;
+        }
     }
     &__input-wrap {
         @include tablet {
             width:80%;
         }
+    }
+
+    &__label {
+        text-transform: uppercase;
+        color: $font-secondary;
+        font-size:0.87rem;
+        line-height:1.12rem;
+        font-weight: 700;
     }
     
     &__input {
@@ -66,22 +73,7 @@
         }
         @include tablet {
             height: 2.5rem;
-            margin: 4px 0 0;
+            margin: 0.25rem 0 0;
         }
     }
-    
-    // &__btn {
-    //     display:flex;
-    //     justify-content:center;
-    //     color:$font-primary;
-    //     font-weight:600;
-    //     text-transform: uppercase;
-    //     padding:0.8rem 2rem 0.6rem;
-    //     border-radius: 5px;
-    //     border:none;
-    //     cursor:pointer;
-    //     &:hover {
-    //         background-color: yellow;
-    //     }
-    // }
 }
