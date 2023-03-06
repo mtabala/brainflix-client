@@ -11,6 +11,12 @@
         @include desktop {
             width:20rem;
             margin-bottom:1.4rem;
+        &:hover {
+            border-radius: 4px;
+            transform: scale(1.1);
+            padding:0.5rem;
+            background-color: $border;
+        } 
         }
     }
     &__item-img {
@@ -20,7 +26,7 @@
         background-color: $border;
         border-radius: 4px;
     }
-    &__item-wrap {
+    &__item-text {
         width:10.5rem;
         align-self: center;
     }

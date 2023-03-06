@@ -10,8 +10,8 @@ function Comment ({selectedVideo}) {
                 <div className="conversation__img"></div>
                 <div className="conversation__comment">
                     <div className="conversation__comment-header">
-                        <p className="conversation__name">{comment.name}</p>
-                        <p className="conversation__date">{timeConverter(comment.timestamp)}</p>
+                        <p className="conversation__comment-name">{comment.name}</p>
+                        <p className="conversation__comment-date">{timeConverter(comment.timestamp)}</p>
                     </div>
                     <p className="conversation__comment-text">{comment.comment}</p>
                 </div>

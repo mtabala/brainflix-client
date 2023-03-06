@@ -3,7 +3,6 @@ import "./HeroVideo.scss"
 function HeroVideo ({img, video}) {
     console.log(video);
     return (
-        <>
         <section className="hero">
             <video controls 
                 className="hero__video" 
@@ -11,7 +10,6 @@ function HeroVideo ({img, video}) {
                 src={video + "?api_key='mtabala'"} >
             </video>
         </section>
-        </>
     )
 }
 export default HeroVideo;

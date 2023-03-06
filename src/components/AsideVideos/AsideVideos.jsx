@@ -9,7 +9,7 @@ function AsideVideos ({UpdateSelectedVideo, selectedVideoId}) {
     return (
         <aside className="videos">
             <h4 className="videos__header">next videos</h4>
-            <ul>
+            <ul className="videos__list">
                 {videos
                     .filter((video) => ( video.id !== selectedVideoId))
                     .map((video) => (<AsideVideoCard UpdateSelectedVideo={UpdateSelectedVideo} key={video.id} video={video} />) )

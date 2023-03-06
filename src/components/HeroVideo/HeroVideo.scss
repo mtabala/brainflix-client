@@ -16,9 +16,11 @@
         background-color: black;
         @include tablet {
             height:70vh;
+            padding:0 2rem;
         }
         @include desktop {
             height:80vh;
+            padding:0 10rem;
         }
     }
 }

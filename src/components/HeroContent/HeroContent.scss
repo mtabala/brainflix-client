@@ -72,7 +72,7 @@
             padding-left: 1.5rem;
         }
     }
-    &__like-btn {
+    &__wrapper-like {
         background-image: url(../../assets/Icons/likes.svg);
         background-size: 1.2rem;
         background-color: $background-primary;
@@ -81,6 +81,9 @@
         background-repeat: no-repeat;
         border:none;
         cursor:pointer;
+        &:hover {
+            font-weight:700;
+        }
         @include tablet {
             order:4;
             padding-left: 1.5rem;
