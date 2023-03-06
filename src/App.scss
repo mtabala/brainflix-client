@@ -65,3 +65,21 @@
         }
     }
 }
+
+//tooltip css for the date like on the mockup
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 5rem;
+    background-color: $border;
+    color:  $font-secondary;
+    text-align: center;
+    margin-left:0.3rem;
+    border-radius: 4px;
+    font-size: 0.6rem;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

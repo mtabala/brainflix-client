@@ -51,14 +51,14 @@
         color:$background-hero;
         margin-bottom:0.5rem;
         @include tablet {
-            width:18%;
+            width:15%;
         }
     }
     &__wrapper-date {
         width:50%;
         @include tablet {
             order:2;
-            width:60%;
+            width:15%;
         }
     }
     &__wrapper-views {
@@ -68,8 +68,11 @@
         padding-left:2rem;
         @include tablet {
             order:3;
-            width:17%;
-            padding-left: 1.5rem;
+            width:15%;
+            margin-right: 0.7rem;
+            margin-left: auto;
+            background-position-y: 14%;
+            padding-left: 1.7rem;
         }
     }
     &__wrapper-like {
@@ -87,6 +90,7 @@
         @include tablet {
             order:4;
             padding-left: 1.5rem;
+            background-position-y: 18%;
         }
     }
     &__text {
