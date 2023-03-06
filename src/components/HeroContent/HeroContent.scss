@@ -51,7 +51,8 @@
         color:$background-hero;
         margin-bottom:0.5rem;
         @include tablet {
-            width:15%;
+            width: fit-content;
+            margin-right: 1.5rem;
         }
     }
     &__wrapper-date {
