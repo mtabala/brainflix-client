@@ -8,9 +8,7 @@ import VideoDetails from './assets//Data/video-details.json';
 import './App.scss';
 
 function App() {
-
     const [selectedVideo, setSelectedVideo] = useState (VideoDetails[0]);
-    console.log("selected video" ,selectedVideo)
 
     function UpdateSelectedVideo(id) {        
         let newVideo = VideoDetails.find((video) => video.id === id)
@@ -23,11 +21,10 @@ function App() {
             <HeroVideo img={selectedVideo.image} video ={selectedVideo.video}/>
 
             <main className="main">
-
-                <div className="main__container">
+                <article className="main__container">
                     <HeroContent selectedVideo={selectedVideo}/>
                     <CommentSection selectedVideo={selectedVideo} />
-                </div>
+                </article>
                 
                 <AsideVideos selectedVideoId={selectedVideo.id} UpdateSelectedVideo={UpdateSelectedVideo}/>
             </main>

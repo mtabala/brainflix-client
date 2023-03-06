@@ -2,10 +2,8 @@ import "./HeroContent.scss"
 import { timeConverter } from "../../Utilities/utilities";
 
 function HeroContent ({selectedVideo}) {
-    console.log("video content", selectedVideo);
 
     return (
-
         <section className="content">
             <h1 className="content__header">{selectedVideo.title}</h1>
             <div className="content__wrapper">
