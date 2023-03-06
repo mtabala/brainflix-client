@@ -5,7 +5,7 @@ import Comment from "../Comment/Comment";
 function CommentSection ({selectedVideo}) {
     return (
         <section className="conversation">
-            <h5 className="conversation__header">3 Comments</h5>
+            <h5 className="conversation__header">{selectedVideo.comments.length} Comments</h5>
             <CommentForm />
             <ul className="conversation__list">
                 <Comment selectedVideo={selectedVideo}/>
