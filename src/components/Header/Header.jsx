@@ -15,7 +15,7 @@ function Header () {
                     className="header__input"
                     placeholder="Search"
                     name="input"
-                ></input>
+                />
                 
                 <img className="header__img"
                     src={mohanImg}

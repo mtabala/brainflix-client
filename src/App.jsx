@@ -21,10 +21,10 @@ function App() {
             <HeroVideo img={selectedVideo.image} video ={selectedVideo.video}/>
 
             <main className="main">
-                <article className="main__container">
+                <div className="main__container">
                     <HeroContent selectedVideo={selectedVideo}/>
                     <CommentSection selectedVideo={selectedVideo} />
-                </article>
+                </div>
                 
                 <AsideVideos selectedVideoId={selectedVideo.id} UpdateSelectedVideo={UpdateSelectedVideo}/>
             </main>

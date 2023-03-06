@@ -5,7 +5,7 @@ function HeroContent ({selectedVideo}) {
 
     return (
         <section className="content">
-            <h1 className="content__header">{selectedVideo.title}</h1>
+            <h2 className="content__header">{selectedVideo.title}</h2>
             <div className="content__wrapper">
                 <p className="content__wrapper-title">By {selectedVideo.channel}</p>
                 <p className="content__wrapper-views">{selectedVideo.views}</p>
