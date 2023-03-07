@@ -1,0 +1,40 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.error {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    @include tablet {
+        padding:2rem;
+    }
+    @include desktop {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    &__header {
+        color:#2AB5BC;
+        padding:0 2rem;
+        font-size:1.1rem;
+        @include tablet {
+            margin-bottom:1rem;
+            font-size:1.5rem;
+        }
+        @include desktop {
+            font-size:2rem;
+            margin:0;
+        }
+    }
+    &__img {
+        width:20rem;
+        @include tablet {
+            width:21.87rem;
+        }
+        @include desktop {
+            width:auto;
+        }
+    }
+}
