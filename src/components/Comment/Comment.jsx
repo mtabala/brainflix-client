@@ -12,7 +12,7 @@ function Comment ({selectedVideo}) {
                     <div className="conversation__comment-header">
                         <p className="conversation__comment-name">{comment.name}</p>
                         <p className="conversation__comment-date tooltip">{timeConverter(comment.timestamp)}
-                            <span class="tooltiptext">
+                            <span className="tooltiptext">
                             {new Date(comment.timestamp).toLocaleDateString("en-US",{year:"numeric",month:"2-digit",day:"2-digit"})}
                             </span>
                         </p>

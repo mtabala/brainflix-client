@@ -10,7 +10,7 @@ function HeroContent ({selectedVideo}) {
                 <p className="content__wrapper-title">By {selectedVideo.channel}</p>
                 <p className="content__wrapper-views">{selectedVideo.views}</p>
                 <p className="content__wrapper-date tooltip">{timeConverter(selectedVideo.timestamp)}
-                    <span class="tooltiptext">
+                    <span className="tooltiptext">
                         {new Date(selectedVideo.timestamp).toLocaleDateString("en-US",{year:"numeric",month:"2-digit",day:"2-digit"})}
                     </span>
                 </p>

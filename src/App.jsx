@@ -1,34 +1,22 @@
-import { useState } from "react";
+
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/Header/Header"
-import HeroVideo from "./components/HeroVideo/HeroVideo"
-import HeroContent from './components/HeroContent/HeroContent';
-import CommentSection from './components/CommentSection/CommentSection';
-import AsideVideos from './components/AsideVideos/AsideVideos';
-import VideoDetails from './assets//Data/video-details.json';
+import HomePage from "./pages/HomePage";
+import UploadPage from "./pages/UploadPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import './App.scss';
 
 function App() {
-    const [selectedVideo, setSelectedVideo] = useState (VideoDetails[0]);
 
-    function UpdateSelectedVideo(id) {        
-        let newVideo = VideoDetails.find((video) => video.id === id)
-        setSelectedVideo(newVideo);
-    }
-    
-    return (    
-        <div className="App">
+    return (  
+        <BrowserRouter>       
             <Header />
-            <HeroVideo img={selectedVideo.image} video ={selectedVideo.video}/>
-
-            <main className="main">
-                <div className="main__container">
-                    <HeroContent selectedVideo={selectedVideo}/>
-                    <CommentSection selectedVideo={selectedVideo} />
-                </div>
-                
-                <AsideVideos selectedVideoId={selectedVideo.id} UpdateSelectedVideo={UpdateSelectedVideo}/>
-            </main>
-        </div>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/upload" element={<UploadPage />} />
+                <Route path="*" element={<NotFoundPage />} />
+            </Routes>  
+        </BrowserRouter>
     );
 }
 
