@@ -1,0 +1,28 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.upload {
+
+    border:0.06rem solid $border;
+    padding:1rem;
+
+    &__header {
+        color:$font-primary;
+        font-size:1.5rem;
+        line-height:2rem;
+        font-weight:700;
+        margin-bottom:1rem;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: $font-secondary;
+        font-size:0.73rem;
+        font-weight: 700;
+        padding-bottom:4px;
+    }
+    &__img {
+        width:17.8rem;
+        border-radius: 4px;
+    }
+}

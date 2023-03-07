@@ -1,5 +1,6 @@
 import UploadImg from "../../assets/Images/Upload-video-preview.jpg";
 import UploadForm from "../../components/UploadForm/UploadForm";
+import "../UploadPage/UploadPage.scss";
 
 function UploadPage() {
 

@@ -3,13 +3,19 @@ import "../UploadForm/UploadForm.scss";
 function UploadForm() {
 
     return (
+        <>
         <form className="upload__form">
-            <label htmlFor="title" className="upload__label-title">title your video</label>
-            <input id="title" className="upload__input-title" placeholder="Add a title to your video"></input>
+            <label htmlFor="title" className="upload__label">title your video</label>
+            <input id="title" className="upload__input" placeholder="Add a title to your video"></input>
 
-            <label htmlFor="description" className="upload__label-description">add a video description</label>
-            <textarea id="description" className="upload__input-description" placeholder="Add a description to your video"></textarea>
+            <label htmlFor="description" className="upload__label">add a video description</label>
+            <textarea id="description" className="upload__input upload__input--description" placeholder="Add a description to your video"></textarea>
         </form>
+        <div className="upload__btns">
+            <a className="btn btn--publish" href="#">publish</a>
+            <a className="btn btn--cancel" href="#">cancel</a>
+        </div>
+        </>
     );
 }
 
