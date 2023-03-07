@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Header.scss"
 import logo from "../../assets/Logo/BrainFlix-logo.svg"
 import mohanImg from "../../assets/Images/Mohan-muruge.jpg"
@@ -5,9 +6,9 @@ import mohanImg from "../../assets/Images/Mohan-muruge.jpg"
 function Header () {
     return (
         <header className="header">
-            <a className="header__logo" href="../../public/index.html">
+            <NavLink className="header__logo" to="/">
                 <img className="header__logo-img" src={logo} alt="logo mohan" />
-            </a>
+            </NavLink>
 
             <form className="header__form">
                 <input
@@ -22,7 +23,9 @@ function Header () {
                     alt="user avatar"
                 />
 
-                <a className="btn btn--header" href="../../public/index.html"> upload </a>
+                <NavLink className="btn btn--header" to="/upload"> 
+                    upload
+                </NavLink>
             </form>
         </header>
     )
