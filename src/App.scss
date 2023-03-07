@@ -56,6 +56,9 @@
     &--publish {
         padding: 0.6rem 0rem;
         background-image: url(./assets/Icons/publish.svg);
+        @include tablet {
+            order:2;
+        }
     }
     &--cancel {
         padding: 0.6rem 0rem;

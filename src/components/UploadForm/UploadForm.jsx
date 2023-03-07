@@ -11,10 +11,6 @@ function UploadForm() {
             <label htmlFor="description" className="upload__label">add a video description</label>
             <textarea id="description" className="upload__input upload__input--description" placeholder="Add a description to your video"></textarea>
         </form>
-        <div className="upload__btns">
-            <a className="btn btn--publish" href="#">publish</a>
-            <a className="btn btn--cancel" href="#">cancel</a>
-        </div>
         </>
     );
 }
