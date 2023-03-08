@@ -1,6 +1,7 @@
 import UploadImg from "../../assets/Images/Upload-video-preview.jpg";
 import UploadForm from "../../components/UploadForm/UploadForm";
 import "../UploadPage/UploadPage.scss";
+import { Link } from "react-router-dom";
 
 function UploadPage() {
 
@@ -18,8 +19,8 @@ function UploadPage() {
                 </div>
 
                 <div className="upload__btns">
-                    <a className="btn btn--publish" href="#">publish</a>
-                    <a className="btn btn--cancel" href="#">cancel</a>
+                    <Link className="btn btn--publish" to="/">publish</Link>
+                    <Link className="btn btn--cancel" to="/">cancel</Link>
                 </div>
             </article>
 
