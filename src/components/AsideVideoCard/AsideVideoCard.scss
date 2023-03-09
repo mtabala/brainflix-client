@@ -2,9 +2,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .videos {
-    &__item {
-        display:flex;
-        gap:1rem;
+    &__item {        
         width:20rem;
         margin-bottom:1rem;
         cursor:pointer;
@@ -18,6 +16,11 @@
             background-color: $border;
         } 
         }
+    }
+    &__item-link {
+        display:flex;
+        gap:1rem;
+        color:$font-primary;
     }
     &__item-img {
         height:4.1rem;
