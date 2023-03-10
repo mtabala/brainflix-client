@@ -14,6 +14,9 @@
         @include desktop {
             gap:2rem;
         }
+        &:last-child {
+            border-bottom: none;
+        }
     }
     &__comment {
         flex:1;
