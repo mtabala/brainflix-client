@@ -58,6 +58,10 @@
         background-image: url(./assets/Icons/publish.svg);
         @include tablet {
             order:2;
+            width:20%;
+        }
+        @include desktop {
+            width: 15%;
         }
     }
     &--cancel {
@@ -67,6 +71,12 @@
         &:hover {
             color:$background-primary;
         }  
+        @include tablet {
+            width:20%;
+        }
+        @include desktop {
+            width: 15%;
+        }
     }
 }
 
