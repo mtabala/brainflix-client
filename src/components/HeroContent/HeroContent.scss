@@ -2,100 +2,117 @@
 @use "../../styles/partials/mixins" as *;
 
 .content {
-    padding:1rem;
-    font-size:0.81rem;
-    line-height:1.12rem;
-    font-weight:400;
+    padding: 1rem;
+    font-size: 0.81rem;
+    line-height: 1.12rem;
+    font-weight: 400;
     color: $font-primary;
 
     @include tablet {
         padding: 1.8rem 2rem 1rem;
-        font-size:0.87rem;
-        line-height:1.37rem;
-        font-weight:400;
+        font-size: 0.87rem;
+        line-height: 1.37rem;
+        font-weight: 400;
 
     }
+
     @include desktop {
-        padding:2rem 0 1rem;
+        padding: 2rem 0 1rem;
     }
+
     &__header {
-        padding-bottom:1rem;
-        border-bottom:1px solid $border;
-        font-size:1.5rem;
-        line-height:2rem;
-        font-weight:700;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $border;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+
         @include tablet {
-            font-size:2.06rem;
-            border:none;
-            padding:0;
-            line-height:2.2rem;
+            font-size: 2.06rem;
+            border: none;
+            padding: 0;
+            line-height: 2.2rem;
         }
     }
+
     &__wrapper {
-        padding:1rem 0rem;
-        border-bottom:1px solid $border;
-        display:flex;
+        padding: 1rem 0rem;
+        border-bottom: 1px solid $border;
+        display: flex;
         flex-wrap: wrap;
-        color:$font-secondary;
+        color: $font-secondary;
+
         @include tablet {
             flex-wrap: nowrap;
-            padding:1rem 0 0;
+            padding: 1rem 0 0;
         }
+
         @include desktop {
-            padding:1rem 2rem 0 0;
+            padding: 1rem 2rem 0 0;
         }
     }
+
     &__wrapper-title {
         font-weight: 600;
-        width:50%;
-        color:$background-hero;
-        margin-bottom:0.5rem;
+        width: 50%;
+        color: $background-hero;
+        margin-bottom: 0.5rem;
+
         @include tablet {
             width: fit-content;
             margin-right: 1.5rem;
         }
     }
+
     &__wrapper-date {
-        width:50%;
+        width: 50%;
+
         @include tablet {
-            order:2;
-            width:15%;
+            order: 2;
+            width: 15%;
         }
     }
+
     &__wrapper-views {
         background-image: url(../../assets/Icons/views.svg);
         background-size: 1.3rem;
         background-repeat: no-repeat;
-        padding-left:2rem;
+        padding-left: 2rem;
+
         @include tablet {
-            order:3;
-            width:15%;
+            order: 3;
+            width: 15%;
             margin-right: 0.7rem;
             margin-left: auto;
             background-position-y: 14%;
             padding-left: 1.7rem;
         }
     }
+
     &__wrapper-like {
         background-image: url(../../assets/Icons/likes.svg);
         background-size: 1.2rem;
         background-color: $background-primary;
-        color:$font-secondary;
-        padding-left:2rem;
+        color: $font-secondary;
+        padding-left: 2rem;
         background-repeat: no-repeat;
-        border:none;
-        cursor:pointer;
+        border: none;
+        cursor: pointer;
+
         &:hover {
-            font-weight:700;
+            font-weight: 700;
         }
+
         @include tablet {
-            order:4;
+            order: 4;
             padding-left: 1.5rem;
             background-position-y: 18%;
         }
     }
+
     &__text {
-        padding-top:1rem;
+        padding-top: 1rem;
+
         @include tablet {
             padding: 1.5rem 2rem 0 0;
         }

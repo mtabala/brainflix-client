@@ -1,12 +1,12 @@
 import "./HeroVideo.scss"
 
-function HeroVideo ({img, video}) {
+function HeroVideo({ img, video }) {
     return (
         <section className="hero">
-            <video 
-                controls 
-                className="hero__video" 
-                poster={img} 
+            <video
+                controls
+                className="hero__video"
+                poster={img}
                 src={video + "?api_key='mtabala'"} >
             </video>
         </section>

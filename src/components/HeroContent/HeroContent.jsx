@@ -1,7 +1,7 @@
 import "./HeroContent.scss"
 import { timeConverter } from "../../Utilities/utilities";
 
-function HeroContent ({selectedVideo}) {
+function HeroContent({ selectedVideo }) {
 
     return (
         <section className="content">
@@ -11,7 +11,7 @@ function HeroContent ({selectedVideo}) {
                 <p className="content__wrapper-views">{selectedVideo.views}</p>
                 <p className="content__wrapper-date tooltip">{timeConverter(selectedVideo.timestamp)}
                     <span className="tooltiptext">
-                        {new Date(selectedVideo.timestamp).toLocaleDateString("en-US",{year:"numeric",month:"2-digit",day:"2-digit"})}
+                        {new Date(selectedVideo.timestamp).toLocaleDateString("en-US", { year: "numeric", month: "2-digit", day: "2-digit" })}
                     </span>
                 </p>
                 <p className="content__wrapper-like">{selectedVideo.likes}</p>

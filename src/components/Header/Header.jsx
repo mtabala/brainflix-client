@@ -3,7 +3,7 @@ import "./Header.scss"
 import logo from "../../assets/Logo/BrainFlix-logo.svg"
 import mohanImg from "../../assets/Images/Mohan-muruge.jpg"
 
-function Header () {
+function Header() {
     return (
         <header className="header">
             <NavLink className="header__logo" to="/">
@@ -17,13 +17,13 @@ function Header () {
                     placeholder="Search"
                     name="input"
                 />
-                
+
                 <img className="header__img"
                     src={mohanImg}
                     alt="user avatar"
                 />
 
-                <NavLink className="btn btn--header" to="/upload"> 
+                <NavLink className="btn btn--header" to="/upload">
                     upload
                 </NavLink>
             </form>

@@ -2,44 +2,51 @@
 @use "../../styles/partials/mixins" as *;
 
 .videos {
-    &__item {        
-        width:20rem;
-        margin-bottom:1rem;
-        cursor:pointer;
+    &__item {
+        width: 20rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
         transition: all 0.3s ease-in-out;
+
         @include desktop {
-            width:20rem;
-            margin-bottom:1.4rem;
-        &:hover {
-            border-radius: 4px;
-            transform: scale(1.05);
-            padding:0.25rem;
-            background-color: $border;
-        } 
+            width: 20rem;
+            margin-bottom: 1.4rem;
+
+            &:hover {
+                border-radius: 4px;
+                transform: scale(1.05);
+                padding: 0.25rem;
+                background-color: $border;
+            }
         }
     }
+
     &__item-link {
-        display:flex;
-        gap:1rem;
-        color:$font-primary;
+        display: flex;
+        gap: 1rem;
+        color: $font-primary;
     }
+
     &__item-img {
-        height:4.1rem;
-        width:7rem;
-        object-fit:cover;
+        height: 4.1rem;
+        width: 7rem;
+        object-fit: cover;
         background-color: $border;
         border-radius: 4px;
     }
+
     &__item-text {
-        width:10.5rem;
+        width: 10.5rem;
         align-self: center;
     }
+
     &__item-title {
         font-size: 0.75rem;
         font-weight: 700;
         line-height: 1.125rem;
-        margin-bottom:0.5rem;
+        margin-bottom: 0.5rem;
     }
+
     &__item-channel {
         font-size: 0.81rem;
         font-weight: 400;

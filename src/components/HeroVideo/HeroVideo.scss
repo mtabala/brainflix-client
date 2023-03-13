@@ -2,25 +2,30 @@
 @use "../../styles/partials/mixins" as *;
 
 .hero {
-    height:40vh;
+    height: 40vh;
+
     @include tablet {
-        height:70vh;
+        height: 70vh;
     }
+
     @include desktop {
-        height:80vh;
+        height: 80vh;
     }
+
     &__video {
-        height:40vh;
+        height: 40vh;
         object-fit: cover;
         width: 100%;
         background-color: black;
+
         @include tablet {
-            height:70vh;
-            padding:0 2rem;
+            height: 70vh;
+            padding: 0 2rem;
         }
+
         @include desktop {
-            height:80vh;
-            padding:0 10rem;
+            height: 80vh;
+            padding: 0 10rem;
         }
     }
 }
