@@ -13,6 +13,7 @@
     @include desktop {
         justify-content: center;
         flex-direction: row;
+        padding: 0 7rem 0 10rem;
     }
 
     &__header {

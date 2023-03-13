@@ -72,7 +72,8 @@
             }
         }
     }
-    &__btns {
+    
+    &__form-btns {
         padding-top:1rem;
         display:flex;
         flex-direction: column;
@@ -83,4 +84,7 @@
             place-content: flex-end;
         }
     }
+}
+.invalid {
+    border:1px solid red;
 }

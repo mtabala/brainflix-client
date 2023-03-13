@@ -59,7 +59,7 @@ function HomePage() {
             <main className="main">
                 <div className="main__container">
                     <HeroContent selectedVideo={selectedVideo}/>
-                    <CommentSection selectedVideo={selectedVideo} />
+                    <CommentSection getVideo={getVideo} selectedVideo={selectedVideo} />
                 </div>
                 
                 <AsideVideos selectedVideoId={selectedVideo.id} videos={videos}/>

@@ -1,17 +1,36 @@
 import UploadImg from "../../assets/Images/Upload-video-preview.jpg";
 import "../UploadForm/UploadForm.scss";
 import {Link, useNavigate } from "react-router-dom";
+import { useRef, useState } from "react";
 
 function UploadForm() {
+    const formUseRef = useRef();
+
     const navigate = useNavigate ()
-        const alertUpload = () => {
-        alert("Thank you for submitting your video")
-        navigate("/")
-    }
+    const [titleError, setTitleError] = useState ('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        
+        const form = formUseRef.current;
+        const title = form.title;
+        const description = form.description;
+
+        if (title.value === "" || description.value === "") {
+            setTitleError ("invalid")
+            setTimeout (() => {
+                alert("Please fill in all the fields");
+            }, 300)
+            return;
+        } else {    
+            alert("Thank you for submitting your video")
+            navigate("/")
+        }
+    }    
 
     return (
         <>
-        <form className="upload__form">
+        <form className="upload__form" onSubmit={handleSubmit} ref={formUseRef}>
             <div className="upload__form-wrapper">
                 <div className="upload__thumbnail">
                     <p className="upload__title">video thumbnail</p>
@@ -20,14 +39,14 @@ function UploadForm() {
                 
                 <div className="upload__wrapper">
                     <label htmlFor="title" className="upload__label">title your video</label>
-                    <input id="title" className="upload__input" placeholder="Add a title to your video"></input>
-                    <label htmlFor="description" className="upload__label">add a video description</label>
-                    <textarea id="description" className="upload__input upload__input--description" placeholder="Add a description to your video"></textarea>
+                    <input id="title" name="title" className={`upload__input ${titleError}`} placeholder="Add a title to your video"></input>
+                    <label htmlFor="description" className="upload__label">  add a video description</label>
+                    <textarea id="description" name="description" className={`upload__input upload__input--description ${titleError}`} placeholder="Add a description to your video"></textarea>
                 </div>
             </div>
 
-            <div className="upload__btns">
-                <button className="btn btn--publish" to="/" onClick={ alertUpload}>publish</button>
+            <div className="upload__form-btns">
+                <button className="btn btn--publish" to="/" >publish</button>
                 <Link className="btn btn--cancel" to="/">cancel</Link>
             </div>      
         </form>
