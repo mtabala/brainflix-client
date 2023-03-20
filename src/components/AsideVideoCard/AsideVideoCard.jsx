@@ -1,7 +1,7 @@
 import './AsideVideoCard.scss';
 import { Link } from "react-router-dom";
 
-function AsideVideoCard({ videoId, image, title, channel }) {
+function AsideVideoCard({ id, image, title, channel }) {
 
     function handleVideoClick() {
         window.scrollTo(0, 0);
@@ -9,7 +9,7 @@ function AsideVideoCard({ videoId, image, title, channel }) {
 
     return (
         <li className="videos__item">
-            <Link to={`/videos/${videoId}`} onClick={() => handleVideoClick()} className="videos__item-link">
+            <Link to={`/videos/${id}`} onClick={() => handleVideoClick()} className="videos__item-link">
                 <img className="videos__item-img" src={image} alt="video thumbnail" />
                 <div className="videos__item-text">
                     <p className="videos__item-title">{title}</p>

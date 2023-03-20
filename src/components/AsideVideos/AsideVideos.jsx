@@ -12,7 +12,7 @@ function AsideVideos({ videos, selectedVideoId }) {
                         selectedVideoId !== video.id
                     ))
                     .map((video) => (
-                        <AsideVideoCard key={video.id} videoId={video.id} image={video.image} title={video.title} channel={video.channel} />
+                        <AsideVideoCard key={video.id} id={video.id} image={video.image} title={video.title} channel={video.channel} />
                     ))
                 }
             </ul>

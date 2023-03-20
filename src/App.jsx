@@ -1,5 +1,4 @@
-// import { useState } from "react";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header"
 import HomePage from "./pages/HomePage";
 import UploadPage from "./pages/UploadPage/UploadPage";
@@ -8,7 +7,7 @@ import './App.scss';
 
 function App() {
 
-    return (  
+    return (
         <BrowserRouter>
             <Header />
             <Routes>
@@ -16,7 +15,7 @@ function App() {
                 <Route path="/videos/:videoId" element={<HomePage />} />
                 <Route path="/upload" element={<UploadPage />} />
                 <Route path="*" element={<NotFoundPage />} />
-            </Routes>  
+            </Routes>
         </BrowserRouter>
     );
 }

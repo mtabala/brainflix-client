@@ -8,7 +8,10 @@ function CommentSection({ selectedVideo, getVideo }) {
             <h5 className="conversation__header">{selectedVideo.comments.length} Comments</h5>
             <CommentForm getVideo={getVideo} />
             <ul className="conversation__list">
-                <Comment selectedVideo={selectedVideo} />
+                {selectedVideo.comments
+                    .map((comment) => (
+                        <Comment comment={comment.comment} name={comment.name} timestamp={comment.timestamp} />
+                    ))}
             </ul>
         </section>
 
