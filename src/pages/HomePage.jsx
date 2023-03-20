@@ -8,9 +8,8 @@ import { useParams } from "react-router-dom";
 import '../App.scss';
 
 function HomePage() {
-    //Define API and API key
-    const api = "https://project-2-api.herokuapp.com";
-    const apiKey = "b085c8f5-ab35-419c-89c6-ecde67a6d2c9";
+    //Define API
+    const api = "http://localhost:9090";
 
     //Define use state variables using useState hooks
     const [selectedVideo, setSelectedVideo] = useState(null); // currently selected video
@@ -34,9 +33,8 @@ function HomePage() {
     // Define function to get a selected video from the API by video id
     function getVideo(videoId) {
         axios
-            .get(`${api}/videos/${videoId}?api_key=${apiKey}`)
+            .get(`${api}/videos/${videoId}`)
             .then((res) => {
-                console.log(res)
                 setSelectedVideo(res.data);
             })
             .catch((err) => {
@@ -47,7 +45,7 @@ function HomePage() {
     // Define function to get all videos from the API
     function getVideos() {
         axios
-            .get(`${api}/videos/?api_key=${apiKey}`)
+            .get(`${api}/videos`)
             .then((response) => {
                 setVideos(response.data);
             })

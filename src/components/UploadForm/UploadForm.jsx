@@ -2,6 +2,7 @@ import UploadImg from "../../assets/Images/Upload-video-preview.jpg";
 import "../UploadForm/UploadForm.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
+import axios from "axios";
 
 function UploadForm() {
     const formUseRef = useRef();
@@ -25,8 +26,19 @@ function UploadForm() {
             }, 300);
             return;
         } else {
-            alert("Thank you for submitting your video");
-            navigate("/");
+            axios
+                .post("http://localhost:9090/videos", {
+                    title: title.value,
+                    description: description.value,
+                })
+                .then((response) => {
+                    alert("Thank you for submitting your video");
+                    navigate("/");
+                })
+                .catch((error) => {
+                    console.log("error: ", error);
+                })
+
         }
     }
 

@@ -67,6 +67,10 @@
         border-radius: 0.25rem;
         margin: 0.25rem 0 1.5em;
 
+        &:active {
+            border: 0.06rem solid $button-hover;
+        }
+
         &::placeholder {
             color: $background-hero;
         }
